@@ -3,10 +3,10 @@ import Header from "./_components/header/header";
 
 export default function PreloginLayout({ children }: { children: any }) {
   return (
-    <>
+    <div className="min-h-[100vh] flex flex-col">
       <Header />
-      <div className="min-h-full">{children}</div>
+      {children}
       <Footer />
-    </>
+    </div>
   );
 }

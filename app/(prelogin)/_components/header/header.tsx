@@ -16,7 +16,7 @@ export default function Header() {
       </div>
       <div className="flex gap-2">
         <PrimaryLink label="Login" href="/login" />
-        <PrimaryLink label="Register" href="/register" variant="outlined" />
+        <PrimaryLink label="Signup" href="/signup" variant="outlined" />
       </div>
     </header>
   );

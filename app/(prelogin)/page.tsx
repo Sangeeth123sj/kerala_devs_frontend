@@ -34,8 +34,11 @@ export default async function Home() {
       <div className="p-3 mt-auto">
         <h1 className="text-xl font-bold">Contributers</h1>
         <div className="mt-2 flex gap-3 overflow-hidden flex-wrap p-3">
-          {totalContributers.map((props) => (
-            <ContributionAvatar {...props} />
+          {totalContributers.map((props, i) => (
+            <ContributionAvatar
+              {...props}
+              key={props?.avatar_url + i.toString()}
+            />
           ))}
         </div>
       </div>

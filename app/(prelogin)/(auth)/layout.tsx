@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AuthLayout({ children }: { children: any }) {
   return (
-    <div className="flex-1 flex flex-wrap">
+    <div className="p-5 flex-1 flex flex-wrap">
       <div className="flex-1 flex flex-col gap-2 justify-center items-center min-w-[300px]">
         <Image
           src={logos.logoBlack}

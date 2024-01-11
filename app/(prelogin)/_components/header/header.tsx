@@ -1,11 +1,12 @@
 import { PrimaryLink } from "@/components/Link";
 import { logos } from "@/constants/images/logo";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="h-10 border flex items-center justify-between px-5 py-6">
-      <div className="flex items-center gap-2">
+    <header className="h-10 flex items-center justify-between px-5 py-6 shadow rounded-lg">
+      <Link href={"/"} className="flex items-center gap-2">
         <Image
           src={logos.logoBlack}
           width={30}
@@ -13,7 +14,7 @@ export default function Header() {
           alt="Logo for Kerala Devs"
         />
         <span>Kerala Devs</span>
-      </div>
+      </Link>
       <div className="flex gap-2">
         <PrimaryLink label="Login" href="/login" />
         <PrimaryLink label="Signup" href="/signup" variant="outlined" />

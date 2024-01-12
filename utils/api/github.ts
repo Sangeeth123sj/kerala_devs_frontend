@@ -1,7 +1,7 @@
 export interface ContributerApiInterface {
   login: string;
   avatar_url?: string;
-  url: string;
+  html_url: string;
 }
 export const getGithubContributers = async (
   user_name: string,

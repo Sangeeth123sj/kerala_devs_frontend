@@ -35,7 +35,7 @@ export default async function Home() {
       {/* About section starts here */}
       <div className="p-3 flex flex-col gap-y-20">
         {aboutSectionData.map((props) => (
-          <AboutSection {...props} />
+          <AboutSection {...props} key={props.title} />
         ))}
         <hr />
       </div>

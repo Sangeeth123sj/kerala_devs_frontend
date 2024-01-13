@@ -18,7 +18,7 @@ export default function Header() {
       </Link>
       <ul className="flex gap-2">
         {navbarConstants.map(({ name, route }) => (
-          <li>
+          <li key={route}>
             <Link
               href={route}
               className="text-sm text-gray-500 hover:text-black"
